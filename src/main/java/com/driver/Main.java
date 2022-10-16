@@ -5,8 +5,8 @@ public class Main {
         Product p=new Product();
         int a=p.product(1,2);
         int b=p.product(3,2,1);
-        double c=p.product(5,3);
-        System.out.println(a + b + c);
+        double c=p.product(5.4,3.6);
+        System.out.println(a+" "+b+" "+c);
     }
     public static class Product{
         public int product(int x, int y) {
@@ -16,7 +16,7 @@ public class Main {
             return x*y*z;
         }
         public double product(double x, double y) {
-            return x/y;
+            return x*y;
         }
     }
 }
